@@ -30,7 +30,7 @@ df=df.astype({'total':'float','sent':'float'})
 mgr_options = df["assigned_staff"].astype(str).unique()
 
 app = dash.Dash()
-
+server=app.server
 app.layout = html.Div([
     html.H2("Sales Funnel Report"),
     html.Div(
